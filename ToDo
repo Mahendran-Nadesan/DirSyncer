@@ -4,3 +4,7 @@ ToDo:
 2. Remove colours.
 3. Clean up code.
 4. Test. Maybe write a test script, to make nonsense files/directories.
+
+git add ...
+git commit -m ""
+git push https://github.com/Mahendran-Nadesan/DirSyncer master
