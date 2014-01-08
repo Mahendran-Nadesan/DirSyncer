@@ -22,6 +22,8 @@
 ## 2. OR (and I like this better), disable the side sync buttons until both dirs have been set. Which leads to:
 ## 3. How do I enable the buttons once self.dir_1 and self.dir_2 have non-default values?
 ## 4. Make sure the sync buttons (in row0 & 1) actually do syncing (as masters, for the "deleted file" problem.
+##
+## Test...for github
 
 # Imports
 from Tkinter import *

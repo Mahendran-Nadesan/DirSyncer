@@ -1,0 +1,28 @@
+StackOverflow question:
+(Search for solutions before posting)
+
+***
+Solution was online:
+Use lambda:
+command=lambda dir=self.some_dir_variable: self.browse_callback(dir)
+***
+
+Setting up a single Tkinter button callback for multiple StringVars
+
+My GUI has two "browse" buttons which both call tkFileDialog.askdirectory.
+However, they will point to different folders. I was hoping I could pass in arguments in the button callback:
+
+self.some_dir_variable = StringVar(self)
+self.some_dir_variable2 = StringVar(self) 
+self.browse_1 = Button(self.frame_5, text="Browse", command=self.browse_callback(self.some_dir_variable))
+self.browse_2 = Button(self.frame_2, text="Browse", command=self.browse_callback(self.some_dir_variable2))        
+
+The function initially looked like this:
+
+def browse1_callback(self, dirvar):
+        mydir = tkFileDialog.askdirectory(parent=None, initialdir="c:\\",title="Select a directory")
+        dirvar.set(mydir)
+        
+However, this didn't work out - running the GUI immediately runs the askdirectory dialog (as well as not preserving the original grid arrangements). Once the askdirectory dialog is cancelled, the button does nothing.
+I really would like to not have a callback for each button, since they call the same dialog and both just set a variable.
+Could anyone suggest a way to implement this?
