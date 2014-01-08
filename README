@@ -1,0 +1,15 @@
+DirSyncer
+
+Small GUI app to synchronise the contents of two directories.
+
+Directions:
+- Browse and select *both* directories.
+- Click "Sync Options".
+- Click the appropriate "Sync" button (the directory which you want as your "master" directory), or the "Sync All" button.
+
+Notes on limitations:
+This app is meant to be hugely limited. One of the biggest one is that, if you choose to "sync all", a directory/file which you deleted in one directory, and wish to not copy, will be copied (because it exists in one of the target directories).
+The workarounds are: delete both manually before syncing, or pick the directory with the deleted contents as your "master" - i.e. click that directory's "Sync" button.
+
+Aims:
+- Practice Tkinter, writing classes

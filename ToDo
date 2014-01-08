@@ -1,0 +1,6 @@
+ToDo:
+
+1. Make enabling of sync buttons contingent on both target directories being picked.
+2. Remove colours.
+3. Clean up code.
+4. Test. Maybe write a test script, to make nonsense files/directories.
